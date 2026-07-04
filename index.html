@@ -1,0 +1,357 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>汪逸磊 — 业务员实习生</title>
+  <meta name="description" content="汪逸磊的个人作品集 — 业务员实习生，热爱机械与制造">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            neo: {
+              red: '#FF6B6B',
+              yellow: '#FFD93D',
+              violet: '#C4B5FD',
+              cream: '#FFFDF7',
+              black: '#000000',
+            }
+          },
+          fontFamily: {
+            sans: ['"Noto Sans SC"', 'system-ui', '-apple-system', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-neo-cream text-neo-black font-sans antialiased relative">
+
+  <!-- ============================================ -->
+  <!-- NAVIGATION                                    -->
+  <!-- ============================================ -->
+  <nav class="sticky top-0 z-50 bg-neo-black text-white border-b-4 border-neo-black">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-2 font-bold text-xl tracking-tight hover:text-neo-yellow transition-colors duration-100">
+          <i data-lucide="wrench" class="h-6 w-6 stroke-[3px]"></i>
+          <span>汪逸磊</span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <div class="hidden md:flex items-center gap-1">
+          <a href="#hero" class="px-4 py-2 font-bold hover:bg-neo-yellow hover:text-neo-black transition-colors duration-100 border-2 border-transparent hover:border-neo-black">首页</a>
+          <a href="#skills" class="px-4 py-2 font-bold hover:bg-neo-yellow hover:text-neo-black transition-colors duration-100 border-2 border-transparent hover:border-neo-black">技能</a>
+          <a href="#projects" class="px-4 py-2 font-bold hover:bg-neo-yellow hover:text-neo-black transition-colors duration-100 border-2 border-transparent hover:border-neo-black">学习项目</a>
+          <a href="#contact" class="px-4 py-2 font-bold hover:bg-neo-yellow hover:text-neo-black transition-colors duration-100 border-2 border-transparent hover:border-neo-black">联系</a>
+        </div>
+
+        <!-- Mobile Hamburger -->
+        <button id="menu-btn" class="md:hidden p-2 border-2 border-white hover:bg-neo-yellow hover:text-neo-black hover:border-neo-black transition-colors duration-100" aria-label="菜单">
+          <i data-lucide="menu" class="h-6 w-6 stroke-[3px]"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="mobile-menu md:hidden">
+        <div class="flex flex-col gap-1 pb-4">
+          <a href="#hero" class="px-4 py-3 font-bold hover:bg-neo-yellow hover:text-neo-black border-2 border-transparent hover:border-neo-black">首页</a>
+          <a href="#skills" class="px-4 py-3 font-bold hover:bg-neo-yellow hover:text-neo-black border-2 border-transparent hover:border-neo-black">技能</a>
+          <a href="#projects" class="px-4 py-3 font-bold hover:bg-neo-yellow hover:text-neo-black border-2 border-transparent hover:border-neo-black">学习项目</a>
+          <a href="#contact" class="px-4 py-3 font-bold hover:bg-neo-yellow hover:text-neo-black border-2 border-transparent hover:border-neo-black">联系</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================ -->
+  <!-- HERO SECTION                                  -->
+  <!-- ============================================ -->
+  <section id="hero" class="relative overflow-hidden border-b-4 border-neo-black bg-neo-yellow bg-halftone-yellow">
+    <!-- Decorative Elements -->
+    <div class="absolute top-8 right-8 sm:top-12 sm:right-16 animate-spin-slow opacity-70">
+      <svg width="60" height="60" viewBox="0 0 60 60" class="text-neo-black">
+        <polygon points="30,5 38,22 56,22 42,33 47,51 30,40 13,51 18,33 4,22 22,22" fill="currentColor"/>
+      </svg>
+    </div>
+    <div class="absolute bottom-12 left-8 sm:bottom-20 sm:left-20 animate-float opacity-60">
+      <svg width="40" height="40" viewBox="0 0 40 40" class="text-neo-red">
+        <circle cx="20" cy="20" r="18" fill="currentColor"/>
+      </svg>
+    </div>
+    <div class="absolute top-1/3 right-12 sm:right-32 hidden sm:block animate-spin-slow opacity-50" style="animation-direction: reverse; animation-duration: 15s;">
+      <svg width="36" height="36" viewBox="0 0 36 36" class="text-neo-violet">
+        <rect x="2" y="2" width="32" height="32" fill="currentColor" transform="rotate(15 18 18)"/>
+      </svg>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20 md:py-32 lg:py-40 relative z-10">
+      <div class="flex flex-col lg:flex-row items-start gap-8 lg:gap-16">
+        <!-- Left: Text Block -->
+        <div class="flex-1 space-y-6">
+          <!-- Greeting Badge -->
+          <div class="inline-block border-4 border-neo-black bg-neo-cream px-4 py-2 rotate-sticker-2 shadow-hard-sm">
+            <span class="font-bold text-sm sm:text-base">👋 你好，我是</span>
+          </div>
+
+          <!-- Name Headline -->
+          <h1 class="leading-none">
+            <span class="block text-5xl sm:text-7xl md:text-8xl font-black tracking-tight bg-neo-black text-neo-cream px-4 sm:px-6 py-2 sm:py-4 inline-block border-4 border-neo-black rotate-sticker-1 shadow-hard">
+              汪逸磊
+            </span>
+          </h1>
+
+          <!-- Title Line -->
+          <div class="flex flex-wrap gap-3 items-center">
+            <span class="text-2xl sm:text-3xl md:text-4xl font-bold bg-neo-red text-white px-4 py-2 border-4 border-neo-black rotate-sticker-4 shadow-hard-sm inline-block">
+              业务员实习生
+            </span>
+            <span class="text-xl sm:text-2xl font-bold bg-neo-violet px-4 py-2 border-4 border-neo-black rotate-sticker-3 shadow-hard-sm hidden sm:inline-block">
+              ⚙️ 热爱学习
+            </span>
+          </div>
+
+          <!-- Description -->
+          <p class="text-lg sm:text-xl font-medium max-w-xl leading-relaxed mt-6 bg-neo-cream border-4 border-neo-black p-4 sm:p-5 shadow-hard-sm">
+            在装配车间的这段经历让我明白，再先进的智能设备也离不开一线工人的细致操作。耐得住枯燥，沉得下心，才能在平凡岗位上做好每一件小事。这不仅是对技术的锤炼，更是对心性的打磨。扎根生产一线，用双手和匠心打磨每一件产品。
+            <br class="hidden sm:block">
+            我相信<span class="bg-neo-yellow px-1 font-bold">精密的制造</span>来自<span class="bg-neo-violet px-1 font-bold">踏实的态度</span>。
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-wrap gap-3 pt-2">
+            <a href="#projects" class="group inline-flex items-center gap-2 bg-neo-black text-white font-bold text-lg px-6 py-3 border-4 border-neo-black shadow-hard btn-press">
+              查看学习项目
+              <i data-lucide="arrow-down" class="h-5 w-5 stroke-[3px] group-hover:translate-y-1 transition-transform duration-100"></i>
+            </a>
+            <a href="project.html" class="inline-flex items-center gap-2 bg-neo-cream font-bold text-lg px-6 py-3 border-4 border-neo-black shadow-hard btn-press hover:bg-neo-yellow transition-colors duration-100">
+              学习项目详情
+              <i data-lucide="arrow-right" class="h-5 w-5 stroke-[3px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Decorative Avatar/Shape -->
+        <div class="hidden lg:block flex-shrink-0">
+          <div class="w-56 h-56 sm:w-64 sm:h-64 border-4 border-neo-black bg-neo-cream shadow-hard-lg rotate-sticker-3 relative overflow-hidden bg-halftone">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img src="avatar1.jpeg" alt="鸣人头像" class="h-full w-full object-cover object-center scale-110" style="object-position: center 32%;">
+            </div>
+            <!-- Decorative corner accents -->
+            <div class="absolute top-0 left-0 w-8 h-8 bg-neo-red border-r-4 border-b-4 border-neo-black"></div>
+            <div class="absolute bottom-0 right-0 w-8 h-8 bg-neo-violet border-l-4 border-t-4 border-neo-black"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SKILLS SECTION                                -->
+  <!-- ============================================ -->
+  <section id="skills" class="py-16 md:py-24 border-b-4 border-neo-black bg-neo-cream relative bg-grid">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+      <!-- Section Header -->
+      <div class="mb-12 md:mb-16">
+        <h2 class="inline-block text-4xl sm:text-5xl md:text-6xl font-black bg-neo-violet px-4 sm:px-6 py-2 border-4 border-neo-black shadow-hard rotate-sticker-1">
+          🛠️ 技能
+        </h2>
+      </div>
+
+      <!-- Skills Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Skill 1 -->
+        <div class="bg-white border-4 border-neo-black p-6 shadow-hard rotate-sticker-2 shadow-hard-hover">
+          <div class="bg-neo-yellow border-4 border-neo-black p-3 inline-block mb-4">
+            <i data-lucide="wrench" class="h-8 w-8 stroke-[3px]"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">基础设备维护</h3>
+          <p class="font-medium leading-relaxed">负责车间基础设备的日常点检、保养与故障排查，确保生产线稳定运行。</p>
+        </div>
+
+        <!-- Skill 2 -->
+        <div class="bg-white border-4 border-neo-black p-6 shadow-hard rotate-sticker-4 shadow-hard-hover">
+          <div class="bg-neo-red border-4 border-neo-black p-3 inline-block mb-4">
+            <i data-lucide="clipboard-check" class="h-8 w-8 stroke-[3px] text-white"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">线盘质检流程</h3>
+          <p class="font-medium leading-relaxed">熟悉线盘质量检测标准与流程，掌握关键尺寸测量与外观缺陷判定方法。</p>
+        </div>
+
+        <!-- Skill 3 -->
+        <div class="bg-white border-4 border-neo-black p-6 shadow-hard rotate-sticker-1 shadow-hard-hover">
+          <div class="bg-neo-violet border-4 border-neo-black p-3 inline-block mb-4">
+            <i data-lucide="scan" class="h-8 w-8 stroke-[3px]"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">线盘型号识别</h3>
+          <p class="font-medium leading-relaxed">能够快速准确识别各类线盘型号、规格参数，熟悉不同线盘的适用场景。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- PROJECTS SECTION                              -->
+  <!-- ============================================ -->
+  <section id="projects" class="py-16 md:py-24 border-b-4 border-neo-black bg-neo-red relative bg-halftone-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+      <!-- Section Header -->
+      <div class="mb-12 md:mb-16">
+        <h2 class="inline-block text-4xl sm:text-5xl md:text-6xl font-black bg-neo-black text-white px-4 sm:px-6 py-2 border-4 border-neo-black shadow-hard rotate-sticker-2">
+          📂 学习项目
+        </h2>
+      </div>
+
+      <!-- Projects Cards -->
+        <!-- Project 1 -->
+        <div class="bg-neo-cream border-4 border-neo-black shadow-hard shadow-hard-hover group cursor-pointer">
+          <div class="p-6 flex flex-col h-full">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="bg-neo-red border-4 border-neo-black p-2">
+                <i data-lucide="settings" class="h-6 w-6 stroke-[3px] text-white"></i>
+              </div>
+              <span class="font-mono text-sm font-bold bg-neo-yellow px-2 py-1 border-2 border-neo-black">2026.7</span>
+            </div>
+            <h3 class="text-xl font-bold mb-2 group-hover:underline">设备维护实习</h3>
+            <p class="font-medium leading-relaxed mb-4 flex-1">跟随装配车间设备维修人员学习设备障碍原因及处理方法，了解设备运行相关机制。</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs font-bold bg-neo-violet px-2 py-1 border-2 border-neo-black">设备点检</span>
+              <span class="text-xs font-bold bg-neo-yellow px-2 py-1 border-2 border-neo-black">预防维护</span>
+            </div>
+            <a href="project.html" class="inline-flex items-center gap-1 font-bold text-sm border-b-4 border-neo-black hover:bg-neo-black hover:text-neo-cream transition-colors duration-100 pb-1 self-start">
+              查看详情 <i data-lucide="arrow-right" class="h-4 w-4 stroke-[3px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="bg-neo-cream border-4 border-neo-black shadow-hard shadow-hard-hover group cursor-pointer">
+          <div class="p-6 flex flex-col h-full">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="bg-neo-violet border-4 border-neo-black p-2">
+                <i data-lucide="clipboard-list" class="h-6 w-6 stroke-[3px]"></i>
+              </div>
+              <span class="font-mono text-sm font-bold bg-neo-yellow px-2 py-1 border-2 border-neo-black">2026.7</span>
+            </div>
+            <h3 class="text-xl font-bold mb-2 group-hover:underline">工序工艺熟悉</h3>
+            <p class="font-medium leading-relaxed mb-4 flex-1">跟随带教导师进入车间深入学习，了解线盘从半成品的筒体、片和盖板，在经过装配车间的超声波焊接机和激光刻字后转变为成品的过程。</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs font-bold bg-neo-violet px-2 py-1 border-2 border-neo-black">了解工序</span>
+              <span class="text-xs font-bold bg-neo-yellow px-2 py-1 border-2 border-neo-black">精益生产</span>
+            </div>
+            <a href="project.html" class="inline-flex items-center gap-1 font-bold text-sm border-b-4 border-neo-black hover:bg-neo-black hover:text-neo-cream transition-colors duration-100 pb-1 self-start">
+              查看详情 <i data-lucide="arrow-right" class="h-4 w-4 stroke-[3px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="bg-neo-cream border-4 border-neo-black shadow-hard shadow-hard-hover group cursor-pointer">
+          <div class="p-6 flex flex-col h-full">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="bg-neo-yellow border-4 border-neo-black p-2">
+                <i data-lucide="file-check" class="h-6 w-6 stroke-[3px]"></i>
+              </div>
+              <span class="font-mono text-sm font-bold bg-neo-yellow px-2 py-1 border-2 border-neo-black">2026.7</span>
+            </div>
+            <h3 class="text-xl font-bold mb-2 group-hover:underline">熟悉质检流程</h3>
+            <p class="font-medium leading-relaxed mb-4 flex-1">了解了成品质量检验的流程和方法，熟练了通过偏摆测试仪和游标卡尺测算线盘合格与否。</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs font-bold bg-neo-violet px-2 py-1 border-2 border-neo-black">质量检测</span>
+              <span class="text-xs font-bold bg-neo-yellow px-2 py-1 border-2 border-neo-black">数据分析</span>
+            </div>
+            <a href="project.html" class="inline-flex items-center gap-1 font-bold text-sm border-b-4 border-neo-black hover:bg-neo-black hover:text-neo-cream transition-colors duration-100 pb-1 self-start">
+              查看详情 <i data-lucide="arrow-right" class="h-4 w-4 stroke-[3px]"></i>
+            </a>
+          </div>
+        </div>
+
+  </section>
+
+  <!-- ============================================ -->
+  <!-- CONTACT / FOOTER                              -->
+  <!-- ============================================ -->
+  <section id="contact" class="py-16 md:py-24 bg-neo-black text-white relative bg-halftone-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+      <!-- Section Header -->
+      <div class="mb-12 md:mb-16">
+        <h2 class="inline-block text-4xl sm:text-5xl md:text-6xl font-black bg-neo-yellow text-neo-black px-4 sm:px-6 py-2 border-4 border-neo-yellow shadow-hard rotate-sticker-1">
+          📬 联系我
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+        <!-- Left: Contact Info -->
+        <div class="space-y-6">
+          <p class="text-xl font-medium leading-relaxed">
+            如果你对我的工作感兴趣，或者有合作机会，欢迎随时联系！
+          </p>
+
+          <div class="flex flex-wrap gap-4">
+            <a href="https://mail.qq.com/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-neo-yellow text-neo-black font-bold px-5 py-3 border-4 border-neo-yellow shadow-hard btn-press hover:bg-white transition-colors duration-100">
+              <i data-lucide="mail" class="h-5 w-5 stroke-[3px]"></i>
+              QQ 邮箱
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-transparent text-white font-bold px-5 py-3 border-4 border-white shadow-hard btn-press hover:bg-white hover:text-neo-black transition-colors duration-100">
+              <i data-lucide="github" class="h-5 w-5 stroke-[3px]"></i>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Decorative -->
+        <div class="hidden md:flex items-center justify-center">
+          <div class="w-48 h-48 border-4 border-white rotate-sticker-3 relative overflow-hidden bg-halftone-white">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <i data-lucide="send" class="h-16 w-16 stroke-[3px] text-white opacity-40"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="mt-16 pt-8 border-t-4 border-white/20">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm font-medium text-white/60">
+          <p>© 2026.7 汪逸磊. 保留所有权利.</p>
+          <div class="flex items-center gap-4">
+            <a href="index.html" class="hover:text-neo-yellow transition-colors duration-100">首页</a>
+            <a href="project.html" class="hover:text-neo-yellow transition-colors duration-100">实习详情</a>
+            <a href="#hero" class="hover:text-neo-yellow transition-colors duration-100">返回顶部 ↑</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+    });
+
+    // Close mobile menu on link click
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
